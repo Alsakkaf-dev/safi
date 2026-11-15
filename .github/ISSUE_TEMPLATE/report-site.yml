@@ -1,0 +1,34 @@
+name: Report a site / بلّغ عن موقع
+description: Propose a site for the Safi Arabic list. اقترح موقعًا للقائمة العربية.
+title: "[report] "
+labels: ["list-report"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain / النطاق
+      placeholder: example.com
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example pages / صفحات كأمثلة
+      description: Two or more links that show the problem. رابطان أو أكثر يوضحان المشكلة.
+    validations:
+      required: true
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Which criteria apply? / أي المعايير تنطبق؟
+      description: At least two are needed (see lists/CRITERIA.md). يلزم معياران على الأقل.
+      options:
+        - label: Copied or machine-translated text / نص منسوخ أو مترجم آليًا
+        - label: Mass production across unrelated topics / إنتاج بالجملة في مواضيع غير مترابطة
+        - label: No accountable author / لا مؤلف معروف ولا جهة مسؤولة
+        - label: Built for the search engine, not the reader / مكتوب لمحرك البحث لا للقارئ
+        - label: Buried under ads or redirects / مدفون تحت الإعلانات والتحويلات
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else / ملاحظات

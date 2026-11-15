@@ -1,0 +1,7 @@
+---
+name: Safi Arabic list
+description: Arabic-language content farms and machine-made spam sites. Every entry needs public evidence; see lists/CRITERIA.md.
+homepage: https://github.com/Alsakkaf-dev/safi
+---
+# No entries yet. Sites are added only through a reviewed report with evidence
+# (github.com/Alsakkaf-dev/safi/issues), never in bulk and never by automated guess.
