@@ -87,9 +87,9 @@ describe('search pages', () => {
   const load = (name, url) => new JSDOM(readFileSync(`tests/fixtures/${name}.html`, 'utf8'), { url }).window.document;
   it('finds Google results and their boxes', () => {
     const rs = findResults(load('google', 'https://www.google.com/search?q=x'), 'google', 'https://www.google.com/search?q=x');
-    expect(rs.map((r) => r.host)).toEqual(['good-site.example', 'farm.example', 'sub.spam.example']);
+    expect(rs.map((r) => r.host)).toEqual(['good-site.example', 'farm.example', 'sub.spam.example', 'opaque-farm.example']);
     expect(rs.every((r) => r.el.classList.contains('MjjYud'))).toBe(true);
-    expect(new Set(rs.map((r) => r.el)).size).toBe(3);
+    expect(new Set(rs.map((r) => r.el)).size).toBe(4);
   });
   it('finds Bing results, skipping ads', () => {
     const rs = findResults(load('bing', 'https://www.bing.com/search?q=x'), 'bing', 'https://www.bing.com/search?q=x');

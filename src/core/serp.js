@@ -44,6 +44,17 @@ export function unwrapUrl(href, base = 'https://example.invalid/') {
   return u.href;
 }
 
+const SHOWN = /^(?:https?:\/\/)?((?:[a-z0-9\u00a1-\uffff-]+\.)+[a-z\u00a1-\uffff][a-z0-9\u00a1-\uffff-]+)(?=$|[\s\/›:])/i;
+
+/** The site address a result displays (Google's <cite> breadcrumb, Bing's <cite>). */
+export function shownHost(box) {
+  for (const c of box.querySelectorAll('cite')) {
+    const m = (c.textContent || '').trim().match(SHOWN);
+    if (m) return normalizeHost(m[1]);
+  }
+  return '';
+}
+
 export function findResults(doc, engine, base) {
   const cfg = ENGINES[engine];
   if (!cfg) return [];
@@ -55,15 +66,20 @@ export function findResults(doc, engine, base) {
     for (const a of links) {
       if (seen.has(a)) continue;
       seen.add(a);
-      const url = unwrapUrl(a.getAttribute('href') || '', base);
-      if (!url) continue;
-      const host = normalizeHost(new URL(url).hostname);
-      if (!host || detectEngine(host) === engine) continue; // the engine's own links are not results
       let box = a;
       while (box.parentElement && box.parentElement !== root && box.parentElement.querySelectorAll(cfg.link).length === 1) {
         box = box.parentElement;
       }
       if (box === a) box = a.parentElement || a;
+      let url = unwrapUrl(a.getAttribute('href') || '', base);
+      let host = url ? normalizeHost(new URL(url).hostname) : '';
+      if (!host || detectEngine(host) === engine) {
+        // Some layouts route every click through an opaque engine redirect. The destination
+        // is then only available as the address the engine prints under the title.
+        host = shownHost(box);
+        if (!host || detectEngine(host) === engine) continue; // the engine's own links are not results
+        url = `https://${host}/`;
+      }
       out.push({ el: box, link: a, url, host });
     }
   }

@@ -13,7 +13,7 @@ Version 0.1.0, not yet on the Chrome Web Store.
 - The extension, list engine and settings are complete and tested.
 - It ships with one third-party list (AI-generated image sites) and can subscribe to others.
 - **The Arabic list is empty.** It is filled only through reviewed reports with evidence, see [lists/CRITERIA.md](lists/CRITERIA.md). Until then the Arabic value comes from your own block list and the one-click "block this site" button.
-- Result detection is tested against saved page structures. Search engines change their pages often, so real-world breakage is expected and fixes are welcome.
+- Result detection is tested against saved page structures and was checked once on live Google and Bing pages. Search engines change their pages often, so breakage is expected over time and fixes are welcome.
 
 ## What it does
 
