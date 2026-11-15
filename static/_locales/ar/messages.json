@@ -1,0 +1,170 @@
+{
+ "extName": {
+  "message": "صافي: نتائج بحث بلا مزارع محتوى"
+ },
+ "extDesc": {
+  "message": "ينظّف نتائج البحث من مزارع المحتوى والمواقع المولَّدة آليًا. يعمل محليًا بلا جمع بيانات، بقوائم مفتوحة وقائمة عربية."
+ },
+ "flagged": {
+  "message": "صافي: موقع رديء"
+ },
+ "show": {
+  "message": "إظهار"
+ },
+ "hide": {
+  "message": "إخفاء"
+ },
+ "allowSite": {
+  "message": "هذا الموقع سليم"
+ },
+ "blockSite": {
+  "message": "حجب هذا الموقع"
+ },
+ "blockSiteTitle": {
+  "message": "إخفاء نتائج $A$ دائمًا",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   }
+  }
+ },
+ "blockedNote": {
+  "message": "حُجب $A$ عندك.",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   }
+  }
+ },
+ "reportSite": {
+  "message": "بلّغ عنه للقائمة العامة"
+ },
+ "listUser": {
+  "message": "قائمتك"
+ },
+ "list_safi_ar": {
+  "message": "القائمة العربية"
+ },
+ "list_huge_ai": {
+  "message": "مواقع صور مولَّدة آليًا"
+ },
+ "list_content_farms": {
+  "message": "مزارع محتوى"
+ },
+ "list_seo_spam": {
+  "message": "سبام محركات البحث"
+ },
+ "popOn": {
+  "message": "صافي يعمل"
+ },
+ "popOff": {
+  "message": "صافي متوقف"
+ },
+ "popMode": {
+  "message": "عند العثور على موقع رديء"
+ },
+ "modeLabel": {
+  "message": "ضع عليه علامة"
+ },
+ "modeHide": {
+  "message": "أخفِه"
+ },
+ "popPage": {
+  "message": "في هذه الصفحة"
+ },
+ "popTotal": {
+  "message": "منذ التثبيت"
+ },
+ "popOptions": {
+  "message": "القوائم والإعدادات"
+ },
+ "popNoSerp": {
+  "message": "افتح صفحة نتائج بحث ليبدأ العدّ."
+ },
+ "optTitle": {
+  "message": "إعدادات صافي"
+ },
+ "optLists": {
+  "message": "القوائم"
+ },
+ "optListsHint": {
+  "message": "كل قائمة ملف نصي علني. فعّل ما تثق به."
+ },
+ "optRules": {
+  "message": "قاعدة"
+ },
+ "optUpdated": {
+  "message": "آخر تحديث"
+ },
+ "optNever": {
+  "message": "النسخة المرفقة"
+ },
+ "optUpdate": {
+  "message": "حدّث الآن"
+ },
+ "optUpdating": {
+  "message": "جارٍ التحديث"
+ },
+ "optSource": {
+  "message": "المصدر"
+ },
+ "optAdd": {
+  "message": "أضف قائمة برابط"
+ },
+ "optAddBtn": {
+  "message": "أضف"
+ },
+ "optAddHint": {
+  "message": "رابط https لملف نصي بصيغة uBlacklist أو نطاق في كل سطر."
+ },
+ "optAddFail": {
+  "message": "تعذّرت قراءة القائمة من هذا الرابط."
+ },
+ "optRemove": {
+  "message": "احذف"
+ },
+ "optMine": {
+  "message": "قائمتك الخاصة"
+ },
+ "optBlock": {
+  "message": "مواقع محجوبة (نطاق في كل سطر)"
+ },
+ "optAllow": {
+  "message": "مواقع مستثناة لا تُعلَّم أبدًا"
+ },
+ "optSave": {
+  "message": "احفظ"
+ },
+ "optSaved": {
+  "message": "حُفظت."
+ },
+ "optTest": {
+  "message": "اختبر نطاقًا"
+ },
+ "optTestBtn": {
+  "message": "افحص"
+ },
+ "optTestClean": {
+  "message": "غير موجود في أي قائمة مفعّلة."
+ },
+ "optTestHit": {
+  "message": "محجوب بالقاعدة $A$ من: $B$",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   },
+   "b": {
+    "content": "$2"
+   }
+  }
+ },
+ "optPrivacy": {
+  "message": "صافي لا يرسل عمليات بحثك ولا المواقع التي تزورها إلى أي خادم. الاتصال الوحيد هو تنزيل ملفات القوائم."
+ },
+ "optError": {
+  "message": "فشل التحديث"
+ },
+ "optNotLoaded": {
+  "message": "غير منزّلة بعد"
+ }
+}

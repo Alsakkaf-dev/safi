@@ -1,0 +1,170 @@
+{
+ "extName": {
+  "message": "Safi: search results without content farms"
+ },
+ "extDesc": {
+  "message": "Cleans search results of content farms and machine-made spam sites. Runs locally, collects nothing, uses open lists plus an Arabic list."
+ },
+ "flagged": {
+  "message": "Safi: low-quality site"
+ },
+ "show": {
+  "message": "Show"
+ },
+ "hide": {
+  "message": "Hide"
+ },
+ "allowSite": {
+  "message": "This site is fine"
+ },
+ "blockSite": {
+  "message": "Block this site"
+ },
+ "blockSiteTitle": {
+  "message": "Always hide results from $A$",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   }
+  }
+ },
+ "blockedNote": {
+  "message": "$A$ is now blocked for you.",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   }
+  }
+ },
+ "reportSite": {
+  "message": "Report it to the public list"
+ },
+ "listUser": {
+  "message": "your list"
+ },
+ "list_safi_ar": {
+  "message": "Arabic list"
+ },
+ "list_huge_ai": {
+  "message": "AI-generated image sites"
+ },
+ "list_content_farms": {
+  "message": "content farms"
+ },
+ "list_seo_spam": {
+  "message": "SEO spam"
+ },
+ "popOn": {
+  "message": "Safi is on"
+ },
+ "popOff": {
+  "message": "Safi is off"
+ },
+ "popMode": {
+  "message": "When a low-quality site is found"
+ },
+ "modeLabel": {
+  "message": "Mark it"
+ },
+ "modeHide": {
+  "message": "Hide it"
+ },
+ "popPage": {
+  "message": "On this page"
+ },
+ "popTotal": {
+  "message": "Since install"
+ },
+ "popOptions": {
+  "message": "Lists and settings"
+ },
+ "popNoSerp": {
+  "message": "Open a search results page to start counting."
+ },
+ "optTitle": {
+  "message": "Safi settings"
+ },
+ "optLists": {
+  "message": "Lists"
+ },
+ "optListsHint": {
+  "message": "Every list is a public text file. Turn on the ones you trust."
+ },
+ "optRules": {
+  "message": "rules"
+ },
+ "optUpdated": {
+  "message": "Last updated"
+ },
+ "optNever": {
+  "message": "bundled copy"
+ },
+ "optUpdate": {
+  "message": "Update now"
+ },
+ "optUpdating": {
+  "message": "Updating"
+ },
+ "optSource": {
+  "message": "Source"
+ },
+ "optAdd": {
+  "message": "Add a list by URL"
+ },
+ "optAddBtn": {
+  "message": "Add"
+ },
+ "optAddHint": {
+  "message": "An https link to a text file in uBlacklist format or one domain per line."
+ },
+ "optAddFail": {
+  "message": "That link could not be read as a list."
+ },
+ "optRemove": {
+  "message": "Remove"
+ },
+ "optMine": {
+  "message": "Your own list"
+ },
+ "optBlock": {
+  "message": "Blocked sites (one domain per line)"
+ },
+ "optAllow": {
+  "message": "Sites never to mark"
+ },
+ "optSave": {
+  "message": "Save"
+ },
+ "optSaved": {
+  "message": "Saved."
+ },
+ "optTest": {
+  "message": "Test a domain"
+ },
+ "optTestBtn": {
+  "message": "Check"
+ },
+ "optTestClean": {
+  "message": "Not in any enabled list."
+ },
+ "optTestHit": {
+  "message": "Blocked by rule $A$ from: $B$",
+  "placeholders": {
+   "a": {
+    "content": "$1"
+   },
+   "b": {
+    "content": "$2"
+   }
+  }
+ },
+ "optPrivacy": {
+  "message": "Safi never sends your searches or the sites you visit to any server. Its only network use is downloading the list files."
+ },
+ "optError": {
+  "message": "Update failed"
+ },
+ "optNotLoaded": {
+  "message": "not downloaded yet"
+ }
+}

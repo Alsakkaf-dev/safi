@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Safi</title><link rel="stylesheet" href="ui.css"></head>
+<body>
+<main class="page">
+  <h1 data-i18n="optTitle"></h1>
+  <p class="muted" data-i18n="optPrivacy" style="margin:0"></p>
+  <section class="card">
+    <div><h2 data-i18n="optLists"></h2><div class="muted" data-i18n="optListsHint"></div></div>
+    <div id="lists" class="lists"></div>
+    <form id="addForm" class="row">
+      <label class="f" style="flex:1 1 260px" for="addUrl"><span data-i18n="optAdd"></span><input id="addUrl" type="url" placeholder="https://" required></label>
+      <button class="btn" type="submit" data-i18n="optAddBtn" style="align-self:flex-end"></button>
+    </form>
+    <div id="addMsg" class="muted" role="status" data-i18n="optAddHint"></div>
+  </section>
+  <section class="card">
+    <h2 data-i18n="optMine"></h2>
+    <div class="two">
+      <label class="f" for="userBlock"><span data-i18n="optBlock"></span><textarea id="userBlock" spellcheck="false"></textarea></label>
+      <label class="f" for="userAllow"><span data-i18n="optAllow"></span><textarea id="userAllow" spellcheck="false"></textarea></label>
+    </div>
+    <div class="row"><button id="save" class="btn primary" type="button" data-i18n="optSave"></button><span id="saved" class="ok" role="status"></span></div>
+  </section>
+  <section class="card">
+    <h2 data-i18n="optTest"></h2>
+    <form id="testForm" class="row">
+      <input id="testHost" type="text" placeholder="example.com" style="flex:1 1 220px" aria-labelledby="testBtn">
+      <button id="testBtn" class="btn" type="submit" data-i18n="optTestBtn"></button>
+    </form>
+    <div id="testOut" role="status"></div>
+  </section>
+</main>
+<script src="options.js"></script>
+</body>
+</html>
